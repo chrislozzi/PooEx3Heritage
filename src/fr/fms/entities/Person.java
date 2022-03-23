@@ -113,15 +113,13 @@ public class Person {
 			"BornNull";
 		
 	  }*/
-	public void displayFrenchVip() {
-		
-	}
-	
+
+	@Override
 	public String toString() { 
 		
 		  if(Born != null) {
 			  if(Born.getPopulation()!=0) {
-		 return  lastName + ", " + firstName +", " + age +"ans" + ", " + address +", ville de maissance : " + 
+		 return  lastName + ", " + firstName +", " + age +"ans" + ", habitant à " + address +", ville de maissance : " + 
 				  Born.getName() +", " + Born.getstate() + ", population " + Born.getPopulation() + " habitants";
 			  }else {
 				  return  lastName + ", " + firstName +", " + age +"ans" + ", " + address +", ville de maissance : " + 

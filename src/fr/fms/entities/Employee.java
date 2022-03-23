@@ -16,11 +16,19 @@ public class Employee extends Person{
 	 * @param age
 	 * @param address
 	 * @param Born
+	 * @param company
+	 * @param salary
 	 */
 	public Employee(String lastName, String firstName, int age, String address, City Born, String company, double salary) {
 		super(lastName, firstName, age, address, Born);
 		setCompany(company);
-		setSalary(salary);
+		setSalary(salary);		
+	}
+	
+	public Employee(String lastName, String firstName, int age, String address, City Born, String company) {
+		super(lastName, firstName, age, address, Born);
+		setCompany(company);
+		//setSalary(salary);
 	}
 	/**
 	 * @return the company
@@ -51,4 +59,5 @@ public class Employee extends Person{
 		return super.toString() + ", Entreprise : " + company + ", salaire : " + salary;
 		
 	}
+	
 }
