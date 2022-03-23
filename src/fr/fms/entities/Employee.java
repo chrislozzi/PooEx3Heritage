@@ -53,9 +53,11 @@ public class Employee extends Person{
 	 * @param salary the salary to set
 	 */
 	public void setSalary(double salary) {
-		if(salary < 1269.0) 
-			throw new RuntimeException("Un salaire ne peut être inférieur au SMIC");
-		this.salary = salary;
+		if(salary < 1269.0) { 
+			System.out.println("Un salaire ne peut être inférieur au SMIC");
+		}else{
+			this.salary = salary;
+		}		
 	}		
 	@Override
 	public String toString() {

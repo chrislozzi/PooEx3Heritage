@@ -48,9 +48,11 @@ package fr.fms.entities;
 	 * @param profitSharing the profitSharing to set
 	 */
 	public void setProfitSharing(double profitSharing) {
-		if(profitSharing < 0) 
-			throw new RuntimeException("L'intéressement ne peut être négatif");
-		this.profitSharing = profitSharing;
+		if(profitSharing < 0) { 
+			System.out.println("L'intéressement ne peut être négatif");			 ;
+		}else { 
+			this.profitSharing = profitSharing;
+		}
 	}
 	@Override
 	public String toString() {

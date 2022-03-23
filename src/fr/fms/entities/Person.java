@@ -120,7 +120,7 @@ public class Person {
 		  if(Born != null) {
 			  if(Born.getPopulation()!=0) {
 		 return  lastName + ", " + firstName +", " + age +"ans" + ", habitant à " + address +", ville de maissance : " + 
-				  Born.getName() +", " + Born.getstate() + ", population " + Born.getPopulation() + " habitants";
+				  Born.getName() +", " + Born.getstate();
 			  }else {
 				  return  lastName + ", " + firstName +", " + age +"ans" + ", " + address +", ville de maissance : " + 
 						  Born.getName() +"," +Born.getstate(); 

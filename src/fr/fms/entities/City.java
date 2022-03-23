@@ -65,9 +65,9 @@ public class City {
 			this.population = population;
 
 	}
-
+	@Override
 	public String toString() {		
-		return name +", "+ state +", "+ population +" d'habitants";
+		return name +", "+ state;
 		}
 
 	

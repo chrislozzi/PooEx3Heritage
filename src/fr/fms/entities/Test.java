@@ -18,12 +18,12 @@ public class Test {
 		
 		Commercial ponpon =new Commercial("Dupon","Robert",50,"rue des rosier Toulouse", new City("Limoge","France"),"Brico", 5.0);
 				
-//		System.out.println(manu);
-//		System.out.println(batman);
-//		System.out.println(sarko);
-//		System.out.println(youssou);
-//		System.out.println(gege);
-//		System.out.println(biloute);
+		System.out.println(manu);
+		System.out.println(batman);
+		System.out.println(sarko);
+		System.out.println(youssou);
+		System.out.println(gege);
+		System.out.println(biloute);
 		
 		System.out.println(ponpon);
 		ponpon.setProfitSharing(-1.0);
