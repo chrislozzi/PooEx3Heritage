@@ -1,12 +1,6 @@
 package fr.fms.entities;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Objects;
 
-import javax.management.ObjectInstance;
-
-public class Person {
+public  class Person {
 	private String lastName;	//Nom de la personne
 	private String firstName;	//prénom de la personne
 	private int age; //Age de la personne
