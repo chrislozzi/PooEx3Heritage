@@ -26,6 +26,8 @@ public class Test {
 //		System.out.println(biloute);
 		
 		System.out.println(ponpon);
+		ponpon.setProfitSharing(-1.0);
+		sarko.setSalary(1.0);
 	}
 
 }

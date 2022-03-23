@@ -10,6 +10,7 @@ package fr.fms.entities;
 
   public class Commercial extends Employee{
 	  private double profitSharing;
+	  public static final double minProfitSharing = 0.1;
 	/**
 	 * @param lastName
 	 * @param firstName
@@ -23,6 +24,20 @@ package fr.fms.entities;
 		super(lastName, firstName, age, address, Born, company);
 		setProfitSharing(profitSharing);
 	}
+		
+	/**
+	 * @param lastName
+	 * @param firstName
+	 * @param age
+	 * @param address
+	 * @param Born
+	 * @param company
+	 */
+	public Commercial(String lastName, String firstName, int age, String address, City Born, String company) {
+		super(lastName, firstName, age, address, Born, company);
+		setProfitSharing(minProfitSharing);
+	}
+
 	/**
 	 * @return the profitSharing
 	 */

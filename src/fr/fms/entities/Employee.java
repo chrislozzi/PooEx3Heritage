@@ -10,6 +10,7 @@ package fr.fms.entities;
 public class Employee extends Person{
 	private String company;
 	private double salary;
+	public static final double minSalary = 1269.0;
 	/**
 	 * @param lastName
 	 * @param firstName
@@ -28,7 +29,7 @@ public class Employee extends Person{
 	public Employee(String lastName, String firstName, int age, String address, City Born, String company) {
 		super(lastName, firstName, age, address, Born);
 		setCompany(company);
-		//setSalary(salary);
+		setSalary(minSalary);
 	}
 	/**
 	 * @return the company
@@ -52,6 +53,8 @@ public class Employee extends Person{
 	 * @param salary the salary to set
 	 */
 	public void setSalary(double salary) {
+		if(salary < 1269.0) 
+			throw new RuntimeException("Un salaire ne peut être inférieur au SMIC");
 		this.salary = salary;
 	}		
 	@Override

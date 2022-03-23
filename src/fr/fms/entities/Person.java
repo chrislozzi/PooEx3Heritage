@@ -12,8 +12,8 @@ public class Person {
 	private int age; //Age de la personne
 	private String address; //Lieux de résidence
 	private City Born; //Ville de naissance
-	public final int MIN_AGE =0;
-
+	public static final int MIN_AGE = 0;
+	
 	/**Constructeur dune instance de class Person avec tous les paramètre renseigné
 	 * @param lastName
 	 * @param firstName
