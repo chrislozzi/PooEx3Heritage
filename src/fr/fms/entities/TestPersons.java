@@ -3,6 +3,9 @@
  */
 package fr.fms.entities;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+
 /**
  * @author Stagiaires09
  *
@@ -27,7 +30,18 @@ public class TestPersons {
 		persons[6] = new Commercial("Dupon","Robert",50,"rue des rosier Toulouse", new City("Limoge","France"),"Brico", 5.0);
 		persons[7] = new Commercial("Macron","Emmanuel",43,"Elysee à Paris", new City("Amiens","France", 100), "Zavata" , 0.1);
 		
-		for(Person P : persons) System.out.println(P);
+		ArrayList<Object> personsList = new ArrayList<>();
+		for(Person P : persons) personsList.add(P);	
+		
+		
+		for (Iterator iterator = personsList.iterator(); iterator.hasNext();) {
+			Object object = (Object) iterator.next(); //Cast Object
+			System.out.println(object);
+		}
+		
+		
+		
+		//for(Person P : persons) System.out.println(P);
 
 		
 		
