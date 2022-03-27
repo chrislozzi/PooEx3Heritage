@@ -4,6 +4,7 @@
 package fr.fms.entities;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Iterator;
 
 /**
@@ -11,7 +12,7 @@ import java.util.Iterator;
  *
  */
 public class TestPersons {
-
+	//Exercice 1.8 et 1.9
 	/**
 	 * @param args
 	 */
@@ -30,22 +31,19 @@ public class TestPersons {
 		persons[6] = new Commercial("Dupon","Robert",50,"rue des rosier Toulouse", new City("Limoge","France"),"Brico", 5.0);
 		persons[7] = new Commercial("Macron","Emmanuel",43,"Elysee à Paris", new City("Amiens","France", 100), "Zavata" , 0.1);
 		
-		ArrayList<Object> personsList = new ArrayList<>();
-		for(Person P : persons) personsList.add(P);	
 		
+		ArrayList<Object> personsList = new ArrayList(Arrays.asList(persons));
 		
-		for (Iterator iterator = personsList.iterator(); iterator.hasNext();) {
-			Object object = (Object) iterator.next(); //Cast Object
-			System.out.println(object);
+		for (Iterator it = personsList.iterator(); it.hasNext();) {
+			Person person = (Person) it.next(); //Cast les Object en Person
+			System.out.println(person);
 		}
 		
 		
-		
-		//for(Person P : persons) System.out.println(P);
+				for(Person P : persons) System.out.println(P);
 
 		
 		
 		
 	}
-
 }

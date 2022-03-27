@@ -11,6 +11,7 @@ package fr.fms.entities;
   public class Commercial extends Employee{
 	  private double profitSharing;
 	  public static final double minProfitSharing = 0.1;
+	  public static final double turnover = 50000;
 	/**
 	 * @param lastName
 	 * @param firstName
@@ -37,7 +38,12 @@ package fr.fms.entities;
 		super(lastName, firstName, age, address, Born, company);
 		setProfitSharing(minProfitSharing);
 	}
-
+	
+	
+	@Override
+	public double remuneration() {
+		return turnover*profitSharing/100;
+	}
 	/**
 	 * @return the profitSharing
 	 */
