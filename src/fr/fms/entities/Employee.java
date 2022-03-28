@@ -77,7 +77,10 @@ public class Employee extends Person{
 	}		
 	@Override
 	public String toString() {
-		return super.toString() + ", Entreprise : " + company + ", salaire : " + salary;
+		//Exercice 3.6
+//		return super.toString() + ", Entreprise : " + company + ", salaire : " + salary;
+		//Exercice 3.8
+		return super.toString() ;
 		
 	}
 	

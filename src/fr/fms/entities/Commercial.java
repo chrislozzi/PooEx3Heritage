@@ -62,7 +62,10 @@ package fr.fms.entities;
 	}
 	@Override
 	public String toString() {
-		return super.toString() + " % CA : " + profitSharing;
+		//Exercice 3.6
+//		return super.toString() + " % CA : " + profitSharing;
+		//Exercice 3.8
+		return super.toString();
 	}
   
 	  
